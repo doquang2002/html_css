@@ -34,7 +34,7 @@
 }
 .card--right > img{
     width: 100%;
-    max-height: 120px;
+    max-height: 9.5rem;
 }
 .card__heading{
     font-weight: 300;
