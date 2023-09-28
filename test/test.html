@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>thêm vào trước mỗi số</p>
+    <input type="text" id="pre">
+    <p>Chuỗi</p>
+    <input type="text" id="input">
+    <p id="output"></p>
+    <script>
+        let output = document.getElementById('output');
+        let input = document.getElementById('input');
+        const pre = document.getElementById('pre');
+        let result ='';
+        console.log(input)
+        window.addEventListener('keypress',(e)=>{
+            if(e.keyCode == '13'){
+                output.innerText = '';
+                for (let i = 0; i < input.value.length; i+=3) {
+                     result += pre.value+' '+input.value.slice(i,i+3)+' ';
+                }
+                output.innerText = result;
+            }
+            
+        })
+    </script>
+</body>
+</html>

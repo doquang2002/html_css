@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conntainer{
+            display: flex;
+
+        }
+        #color{
+            width: 50%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label for="">R</label>
+            <input type="range" id="red" min="0" max="255" class="group">
+            <label for="">G</label>
+            <input type="range" id="green" min="0" max="255" class="group">
+            <label for="">B</label>
+            <input type="range" id="blue" min="0" max="255" class="group">
+        </div>
+        <div>
+            <div id="color"></div>
+            <p id="txt">hex</p>
+        </div>
+    </div>
+    <script>
+        let red = document.getElementById('red');
+        let green = document.getElementById('green');
+        let blue = document.getElementById('blue');
+        let color = document.getElementById('color');
+        color.style.backgroundColor = 'rgb(' + red.value + ',' + green.value + ',' + blue.value + ')';
+    </script>
+</body>
+</html>

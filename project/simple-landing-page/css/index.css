@@ -1,0 +1,184 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+:root{
+    --backgroud-page: #1A1919;
+    --font-family: 'Avenir', sans-serif;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: var(--font-family);
+}
+
+body{
+    
+    background-color: var(--backgroud-page);
+}
+p, a{
+    color: #FFFFFF;
+}
+.wrapper{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.075rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.logo{
+    display: flex;
+}
+.logo-text{
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+nav{
+    width: 40%;
+    display: flex;
+    font-family: "Aeonik";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    justify-content: space-around;
+}
+.nav-menu{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item{
+    text-decoration: none;
+}
+.btn{
+    border-radius: 0.3125rem;
+    border: 1.5px solid #FFF;
+    padding: 1rem 2.5rem;
+    color: #FFF;
+}
+.nav-btn{
+
+    background-color: rgba(0,0,0,0.5);
+}
+section{
+    width: 100%;
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-heading{
+    width: 57.125rem;
+    text-align: center;
+    font-size: 4.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.banner-heading > span{
+    color: #3775ED;
+}
+.banner-text{
+    color: #E5E5E5;
+    text-align: center;
+    font-size: 1.275rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+.btn-menu{
+    margin: auto;
+}
+.btn-default{
+    background: #3775ED;
+    border: none;
+}
+.banner > *{
+    margin-bottom: 2rem;
+}
+.banner-img{
+    width: 100%;
+    border-radius: 0.625rem;
+}
+
+.heading{
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.text{
+    color: #E5E5E5;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.ideas-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.ideas-item{
+    display: flex;
+    width: 30%;
+    border-radius: 0.3125rem;
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+}
+.icon{
+    width: 3.875rem;
+    height: 3.875rem; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+}
+.ideas-item > .heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.ideas-item > .text{
+    width: 21.0625rem;
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: normal; 
+    margin-bottom: 2rem;
+}
+.ideas-item > *{
+    margin-bottom: 1rem;
+}
+.ideas-item:nth-child(1){
+    margin-bottom: 1rem;
+    background: #C96408;
+}
+.ideas-item:nth-child(2){
+    margin-bottom: 1rem;
+    background: #7937BB;
+}
+.ideas-item:nth-child(3){
+    margin-bottom: 1rem;
+    background: #3775ED;
+}
