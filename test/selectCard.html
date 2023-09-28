@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/selectCard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -38,9 +42,25 @@
                     <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </div>
             </div>
-            <div class="form-group">
-                <label for=""></label>
-                <input type="text">
+            <div class="form-content">
+                <div class="form-input">
+                    <label for="">Card Number</label>
+                    <input type="text">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="form-group">
+                    <div class="form-input">
+                        <label for="">Expiry Date</label>
+                        <input type="text" placeholder="MM/YY">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="form-input">
+                        <label for="">CVC/CVV</label>
+                        <input type="password" maxlength="4" size="4" placeholder="****">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+                <button class="btn">Save</button>
             </div>
         </form>
     </main>  
